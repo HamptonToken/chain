@@ -1,0 +1,11 @@
+GOLANG APIs
+
+- wallet.GenerateKeys() //address length is 46 bytes
+- wallet.GetBalance()
+- wallet.SendCoins()
+- wallet.Sign()
+- wallet.GetAddressByPublicKey()
+- wallet.GetStake()
+- wallet.GetHistorySend()
+- wallet.GetHistoryReceive()
+- wallet.SetMetering()
