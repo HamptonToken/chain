@@ -9,3 +9,9 @@ GOLANG APIs
 - wallet.GetHistorySend()
 - wallet.GetHistoryReceive()
 - wallet.SetMetering()
+
+Query Balance(it will show 'not exist' when the address is new):
+
+```
+curl  'localhost:26657/abci_query?data="bal:1111111111222222222233333333335555555555"'
+```
