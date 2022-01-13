@@ -64,4 +64,18 @@ func main()  {
 
 	fmt.Println("Current height:", btr.Height)
 	client.WaitForHeight(cl, btr.Height + 1, nil)
+
+	// case 3
+	// again, we can check the balance of address1
+	// curl  'localhost:26657/abci_query?data="bal:1234567890123456789012345678901234567890"'
+	fmt.Println("After transaction, show balance of two accounts:")
+	res, err = cl.ABCIQuery("/websocket", cmn.HexBytes(fmt.Sprintf("%s:%s", "bal", coin_address1)))
+	qres = res.Response
+	fmt.Println("query status:", qres.IsOK())
+	fmt.Println("address1 balance:", string(qres.Value))
+
+	res, err = cl.ABCIQuery("/websocket", cmn.HexBytes(fmt.Sprintf("%s:%s", "bal", coin_address2)))
+	qres = res.Response
+	fmt.Println("query status:", qres.IsOK())
+	fmt.Println("address2 balance:", string(qres.Value))
 }
