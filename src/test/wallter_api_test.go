@@ -5,6 +5,13 @@ import (
     "testing"
 )
 
+var  key = `
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIAHFNZ8+2UnV72fsnUciUAoHYiBKY+FO7IZoT2TPMUUaoAoGCCqGSM49
+AwEHoUQDQgAEM49mdr428vS5+uHc0wjJBqyQ5n8d0QLra97C40uaEw94l6RWjMOG
+bQfHGg6YbZzQ6Zc0qIxf7xu+RX//sTmqCQ==
+-----END EC PRIVATE KEY-----`
+
 func TestGenerateKeys(t *testing.T) {
     Convey("generate key", t, func() {
         priv, pub, addr := wallet.GenerateKeys()
