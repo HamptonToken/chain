@@ -1,7 +1,7 @@
 # HMETA chain
 The helper chain for Mataverse Asset Management
 
-* Basic transaction
+* Basic transactions
 * Authentication
-* Authorization
+* Authorization(request, approval)
 * Internal NFTs
