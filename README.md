@@ -6,3 +6,4 @@ The helper chain for Mataverse Asset Management:
 * Authorization(request, approval)
 * Internal NFTs
 * Message Queues
+* Storage Interfaces
