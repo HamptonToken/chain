@@ -927,11 +927,17 @@ func (app *HMetaChainApplication) InitChain(req types.RequestInitChain) types.Re
 	}
 
 	/*
-		1 token = 1,000,000,000,000,000,000 
+		1 ETH token = 1,000,000,000,000,000,000 
 			which is 1e18 wei, as ETH.
+		1 HMETA token = 10,000
+			which is decimal 4.
+		
 	*/
+	//app.app.state.db.Set(prefixBalanceKey([]byte(INIT_ADDRESS)),
+	//		[]byte("10000000000000000000000000000:1")) // 10000000000,000,000,000,000,000,000, 10 billion tokens
+	
 	app.app.state.db.Set(prefixBalanceKey([]byte(INIT_ADDRESS)),
-			[]byte("10000000000000000000000000000:1")) // 10000000000,000,000,000,000,000,000, 10 billion tokens
+			[]byte("100000000000000:1")) // 100,000,000,000,000, 10 billion tokens
 
 	app.app.state.db.Set([]byte(SET_VAL_NONCE), []byte("0"))
 	app.app.state.db.Set(prefixStakeKey([]byte("")), []byte("0:1"))
