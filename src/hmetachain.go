@@ -51,7 +51,7 @@ const (
 	ADMIN_OP_VAL_PUBKEY_NAME string = "admin_op_val_pubkey"
 	ADMIN_OP_FUND_PUBKEY_NAME string = "admin_op_fund_pubkey"
 	ADMIN_OP_METERING_PUBKEY_NAME string = "admin_op_metering_pubkey"
-	MIN_TOKEN_SEND = "5000000000000000000" // 5 tokens
+	MIN_TOKEN_SEND = "50000" // 5 tokens with decimal 4
 /*
 test account:
 JXEcRZfkjeMZ+W1zOP9KFEc7Py9noko6i6KLe3UzPX0jF82cs7uIVjybtyGPHRyFw3wk708QnPvPP85ALZeK5Q==
