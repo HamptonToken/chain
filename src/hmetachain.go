@@ -22,12 +22,11 @@ import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/libs/log"
 	tmCoreTypes "github.com/tendermint/tendermint/types"
-
 	//signmanager "github.com/HMeta-network/dccn-common/cert/sign"
 )
 
 const (
-	KeyAddressLen = 46
+	KeyAddressLen = 40 //46
 	ValidatorSetChangePrefix string = "val:"
         AccountBlancePrefix string = "bal:"
         AccountStakePrefix string = "stk"
