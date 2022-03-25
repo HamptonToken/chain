@@ -5,6 +5,7 @@ import (
     "testing"
 )
 
+// test key
 var  key = `
 -----BEGIN EC PRIVATE KEY-----
 MHcCAQEEIAHFNZ8+2UnV72fsnUciUAoHYiBKY+FO7IZoT2TPMUUaoAoGCCqGSM49
