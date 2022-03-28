@@ -5,7 +5,7 @@ import (
     "testing"
 )
 
-// test key
+// test key, don't use it in prod
 var  key = `
 -----BEGIN EC PRIVATE KEY-----
 MHcCAQEEIAHFNZ8+2UnV72fsnUciUAoHYiBKY+FO7IZoT2TPMUUaoAoGCCqGSM49
