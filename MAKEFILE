@@ -1,5 +1,7 @@
 BUILD_TAGS?='hmetachain'
 OUTPUT?=build/hmetachain
+
+#use rev hash
 BUILD_FLAGS = -ldflags "-X github.com/tendermint/tendermint/version.GitCommit=`git rev-parse --short=8 HEAD`"
 
 OUTPUTTOOLDIR?=build/tool
