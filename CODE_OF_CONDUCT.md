@@ -1,5 +1,5 @@
 # Contributor Covenant Code of Conduct
-(2024)
+(2025)
 
 ## Our Pledge
 
